@@ -1,0 +1,80 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='ad.size', content='width=300,height=250')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Template 300x250
+    // WARNING
+    // Remove for production
+    link(rel='stylesheet prefetch', href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='controls/controls.css')
+    // Remove for production
+    // WARNING
+    link(href='css/style.css', rel='stylesheet')
+    script(type='text/javascript').
+      var clickTag = "https://www.google.com";
+  body
+    .ads-container
+      a.clickTag(href='javascript:window.open(window.clickTag); void(0)')
+        .below-click-tag
+          .top-view
+            .slide-5
+              h1 Logo!
+              #app
+              #area
+            // ./ slide-5
+            .slide-4
+              .image-4
+              .image-4
+              .tf-box-4
+              .tf-4
+                | Some cool
+                br
+                | staff happen here
+            // ./ slide-4
+            .slide-3
+              .image-3
+              .tf-box-3
+              .tf-3
+                | Some cool
+                br
+                | staff happen here
+            // ./ slide-3
+            .slide-2
+              .image-2
+              .tf-box-2
+              .tf-2
+                | Some cool
+                br
+                | staff happen here
+            // ./ slide-2
+            .slide-1
+              .image-1
+              .tf-box-1
+              .tf-1
+                | Some cool
+                br
+                | staff happen here
+            // ./ slide-1
+          // ./ top-view
+      a.clickTag(href='javascript:window.open(window.clickTag); void(0)')
+        .cta-container
+          // cta goes here
+          .bottom-view
+            .bottom-logo
+            button.ads-button(href='#')
+              span.shine
+              span.text Click Me
+            .color-line
+      .above-click-tag
+    #area
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js')
+
+
+    include ./_includes/animation.jade
+    
+    //- Remove 
+    include ./_includes/controls-btn.jade
+    include ./_includes/controls.jade
+    //- Remove
